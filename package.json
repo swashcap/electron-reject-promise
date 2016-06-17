@@ -2,7 +2,7 @@
   "name": "electron-reject-promise",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "main/index.js",
   "scripts": {
     "start": "NODE_ENV=development electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,8 @@
   "license": "MIT",
   "dependencies": {
     "electron-debug": "^1.0.0",
-    "electron-prebuilt": "^1.2.3"
+    "electron-prebuilt": "^1.2.3",
+    "normalize.css": "^4.1.1"
   },
   "devDependencies": {
     "devtron": "^1.2.0"

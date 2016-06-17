@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Electron Reject Promise</title>
+    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
+    <style>
+      html {
+        background: #e9e9e9;
+        color: #231f20;
+        padding: 1rem;
+      }
+
+      /* Content */
+      h1 {
+        color: #cd9b56;
+        font-size: 300%;
+        margin: 0 0 1rem;
+      }
+      a {
+        color: #cd9b56;
+      }
+
+      /* Message */
+      #message {
+        color: #fff;
+        display: inline-block;
+        margin: 0 0 1rem;
+        padding: .5rem;
+      }
+      .error {
+        background: #ee5c48;
+      }
+      .success {
+        background: #4bcbea;
+      }
+
+      /* Form */
+      label {
+        display: block;
+      }
+      input {
+        background: #fff;
+        border: thin solid #231f20;
+        color: inherit;
+        padding: .5rem;
+      }
+      button {
+        background: #231f20;
+        border: thin solid transparent;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        padding: .5rem;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Electron Reject Promise</h1>
+    <p>A test project to see how Electron handles <code>Promise.reject</code>
+    and the <a href="http://electron.atom.io/docs/api/remote/">remote</a>
+    module.</p>
+
+    <form>
+      <div id="message"></div>
+
+      <label for="name">Name:</label>
+      <input aria-described-by="message" id="name" name="name" type="text">
+
+      <button id="sync-button" type="submit">Validate Synchronously</button>
+      <button id="promise-button" type="submit">Validate With Promise</button>
+    </form>
+    <script>
+      (function() {
+        const script = document.createElement('script');
+        script.src = process.cwd() + '/render/index.js';
+        document.querySelector('head').appendChild(script);
+      })();
+    </script>
+  </body>
+</html>
