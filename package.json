@@ -2,10 +2,18 @@
   "name": "electron-reject-promise",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
+    "start": "NODE_ENV=development electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Cory Reed <swashcap@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "electron-debug": "^1.0.0",
+    "electron-prebuilt": "^1.2.3"
+  },
+  "devDependencies": {
+    "devtron": "^1.2.0"
+  }
 }
