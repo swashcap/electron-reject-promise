@@ -30,6 +30,6 @@ syncButtonEl.addEventListener('click', event => {
     validationService.validateSynchronously(nameInputEl.value);
     setMessage('Valid!');
   } catch (error) {
-    setMessage(error.message);
+    setMessage(error.message, 'error');
   }
 }, false);
